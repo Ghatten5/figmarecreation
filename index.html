@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Figma Full</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sidebar">
+  <h2>Mini Figma</h2>
+  <div class="section">
+    <button id="addRect">Add Rectangle</button>
+    <button id="addCircle">Add Circle</button>
+    <button id="cloneShape">Clone Shape</button>
+    <button id="deleteShape">Delete Selected</button>
+  </div>
 
+  <div class="section">
+    <label>Fill Color: <input type="color" id="fillColor"></label>
+    <label>Border Color: <input type="color" id="borderColor"></label>
+  </div>
+
+  <div class="section">
+    <button id="saveProject">Save Project</button>
+    <button id="loadProject">Load Project</button>
+  </div>
+
+  <h3>Layers</h3>
+  <div id="layers"></div>
+</div>
+
+<div id="canvas"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
